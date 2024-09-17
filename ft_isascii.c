@@ -1,26 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isabegar <isabegar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/17 18:15:39 by isabegar          #+#    #+#             */
-/*   Updated: 2024/09/17 20:20:59 by isabegar         ###   ########.fr       */
+/*   Created: 2024/09/17 20:41:29 by isabegar          #+#    #+#             */
+/*   Updated: 2024/09/17 21:01:13 by isabegar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int digit)
+//#include <stdio.h>
+int	ft_isascii(int c)
 {
-	if (digit >= '0' && digit <= '9')
-		return (1);
-	else
-		return (0);
+	return (c >= 0 && c <= 127);
 }
 
-/*int	main(void)
+/*int main ()
 {
-	char digit = '2';
-	printf("%d", ft_isdigit (digit));
-	return(0);
+	int	c = 2;
+	printf("%d", ft_isascii(c));
+	return (0);
 }*/
