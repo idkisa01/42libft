@@ -1,25 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isabegar <isabegar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/17 20:15:53 by isabegar          #+#    #+#             */
-/*   Updated: 2024/09/18 13:05:33 by isabegar         ###   ########.fr       */
+/*   Created: 2024/09/18 16:01:07 by isabegar          #+#    #+#             */
+/*   Updated: 2024/09/19 14:16:16 by isabegar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
+int	ft_strlen(char *str)
+{
+	int	len;
 
-int	ft_isalnum(int c)
-{
-	return ((c >= '0' && c <= '9')
-		|| (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+	len = 0;
+	while (*str != '\0')
+	{
+		len++;
+		str++;
+	}
+	return (len);
 }
-/*int main (void)
+
+/*int main()
 {
-	int	c = '2';
-	printf("%d", ft_isalnum(c));
-	return (0);
+	printf("%d\n", ft_strlen("Hello, world"));
+	
+	return(0);
 }*/

@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isabegar <isabegar@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/17 20:15:53 by isabegar          #+#    #+#             */
-/*   Updated: 2024/09/18 13:05:33 by isabegar         ###   ########.fr       */
+/*   Created: 2024/09/18 15:41:56 by isabegar          #+#    #+#             */
+/*   Updated: 2024/09/18 15:54:36 by isabegar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+//#include<stdio.h>
 
-int	ft_isalnum(int c)
+int	ft_isprint(int c)
 {
-	return ((c >= '0' && c <= '9')
-		|| (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'));
+	return (c >= 31 && c <= 126);
 }
+
 /*int main (void)
 {
-	int	c = '2';
-	printf("%d", ft_isalnum(c));
-	return (0);
+	int	c = 122;
+	printf("%d", ft_isprint(c));
+	return(0);
 }*/
