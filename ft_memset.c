@@ -3,10 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isabegar <isabegar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: isabegar <isabegar@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/18 17:23:43 by isabegar          #+#    #+#             */
-/*   Updated: 2024/09/18 17:23:44 by isabegar         ###   ########.fr       */
+/*   Created: 2024-09-21 15:47:10 by isabegar          #+#    #+#             */
+/*   Updated: 2024-09-21 15:47:10 by isabegar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
+void	*memset(void *s, int c, size_t n)
+{
+	char	*ptr;
+	size_t	i;
+	
+	i=0;
+	
+
+	
+} 
