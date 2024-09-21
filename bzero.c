@@ -1,42 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   bzero.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isabegar <isabegar@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024-09-21 15:47:10 by isabegar          #+#    #+#             */
-/*   Updated: 2024-09-21 15:47:10 by isabegar         ###   ########.fr       */
+/*   Created: 2024-09-21 18:38:15 by isabegar          #+#    #+#             */
+/*   Updated: 2024-09-21 18:38:15 by isabegar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 
-void	*memset(void *s, int c, size_t n)
+void	clear_memory(char *s, size_t n)
 {
-	char	*ptr;
-	size_t	i;
-	
-	i=0;
-	ptr = (char *)s;
-	while (i < n)
-	{
-		ptr[i] = (char)c;
-		i++;
-	}
-	return (s);
+	bzero(s, n);
 }
 
-int main(void)
+int main()
 {
-	char buffer[20] = "cocacola";
-
-	memset(buffer, 'x',2);
-
-	buffer[10] = '\0';
-
-	printf("%s", buffer);
-
+	char buffer[10] = "Hello";
+	clear_memory(buffer,10);
+	printf("Buffer after clearing: '%s'\n", buffer);
 	return 0;
 }
