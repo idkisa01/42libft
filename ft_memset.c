@@ -9,7 +9,8 @@
 /*   Updated: 2024-09-21 15:47:10 by isabegar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 void	*memset(void *s, int c, size_t n)
 {
@@ -17,7 +18,24 @@ void	*memset(void *s, int c, size_t n)
 	size_t	i;
 	
 	i=0;
-	
+	ptr = (char *)s;
+	while (i < n)
+	{
+		ptr[i] = (char)c;
+		i++;
+	}
+	return (s);
+}
 
-	
-} 
+int main(void)
+{
+	char buffer[20] = "cocacola";
+
+	memset(buffer, 'x', );
+
+	buffer[4] = '\0';
+
+	printf("%s", buffer);
+
+	return 0;
+}
