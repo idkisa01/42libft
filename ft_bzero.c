@@ -1,41 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   bzero.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isabegar <isabegar@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024-09-21 15:47:10 by isabegar          #+#    #+#             */
-/*   Updated: 2024-09-21 15:47:10 by isabegar         ###   ########.fr       */
+/*   Created: 2024-09-21 18:38:15 by isabegar          #+#    #+#             */
+/*   Updated: 2024-09-21 18:38:15 by isabegar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
-//#include <stdlib.h>
+//#include <string.h>
 
-void	*ft_memset(void *s, int c, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-	char	*ptr;
-	size_t	i;
+	unsigned char	*ptr;
 
-	i = 0;
-	ptr = (char *)s;
-	while (i < n)
+	ptr = (unsigned char *)s;
+	while (n > 0)
 	{
-		ptr[i] = (char)c;
-		i++;
+		*ptr = '0';
+		ptr++;
+		n--;
 	}
-	return (s);
 }
+
 /*int main(void)
 {
-	char buffer[20] = "cocacola";
-
-	ft_memset(buffer, 'x',2);
-
-	buffer[10] = '\0';
-
-	printf("%s", buffer);
-
-	return 0;
+	char buffer[11] = "Helloworld";
+	ft_bzero(buffer, 5);
+	printf("<%s>\n", buffer);
+	return (0);
 }*/
