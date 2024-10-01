@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/26 10:17:34 by marvin            #+#    #+#             */
-/*   Updated: 2024/09/26 10:17:34 by marvin           ###   ########.fr       */
+/*   Created: 2024/10/01 14:13:30 by marvin            #+#    #+#             */
+/*   Updated: 2024/10/01 14:13:30 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
 #include <stdio.h>
 
-char	*ft_strchr(char *s, int c)
+char	*ft_strrchr(char *s, int c)
 {
-	int	i;
+	int	longer;
 
-	i = 0;
-	while (s[i] != '\0')
+	longer = 0;
+	while (s[longer] != '\0')
+		longer++;
+	while (longer--)
 	{
-		if (s[i] == c)
-			return (s + i);
-		i++;
+		if (s[longer] == c)
+			return (s + longer);
 	}
 	return (NULL);
 }
 
-/*int main ()
+int main()
 {
-	
-	printf("strchr %s \n",ft_strchr("hola paco como estas",'a'));
-}*/
+	printf("strrchr %s \n", ft_strrchr("Hola, mundo!", 'm'));
+}
