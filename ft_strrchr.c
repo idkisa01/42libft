@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: isabegar <isabegar@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/01 14:13:30 by marvin            #+#    #+#             */
-/*   Updated: 2024/10/01 14:13:30 by marvin           ###   ########.fr       */
+/*   Created: 2024-10-02 09:50:17 by isabegar          #+#    #+#             */
+/*   Updated: 2024-10-02 09:50:17 by isabegar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_strrchr(char *s, int c)
 	return (NULL);
 }
 
-int main()
+/*int main()
 {
 	printf("strrchr %s \n", ft_strrchr("Hola, mundo!", 'm'));
-}
+}*/
