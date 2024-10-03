@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isabegar <isabegar@student.42.fr>          #+#  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024-10-02 11:53:34 by isabegar          #+#    #+#             */
-/*   Updated: 2024-10-02 11:53:34 by isabegar         ###   ########.fr       */
+/*   Created: 2024/10/02 11:53:34 by isabegar          #+#    #+#             */
+/*   Updated: 2024/10/03 20:10:14 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t		i;
+	size_t				i;
 	const unsigned char	*ptr_s1;
 	const unsigned char	*ptr_s1;
 

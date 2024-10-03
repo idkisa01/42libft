@@ -21,7 +21,7 @@ char	*ft_strnstr(const char *big,	const char *small, size_t size)
 	i = 0;
 	if (*small == '\0')
 		return ((char *)big);
-	while (big[i] != '\0' && i< size)
+	while (big[i] != '\0' && i < size)
 	{
 		j = 0;
 		while (big[i + j] == small[j])
@@ -35,7 +35,7 @@ char	*ft_strnstr(const char *big,	const char *small, size_t size)
 	return (NULL);
 }
 
-int main() {
+/*int main() {
     const char *big = "Hello, world!";
     const char *small = "world";
     char *result = ft_strnstr(big, small, 13);
@@ -43,4 +43,4 @@ int main() {
     printf("Result: '%s'\n", result);
 
     return 0;
-}
+}*/

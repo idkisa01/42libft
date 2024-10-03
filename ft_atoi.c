@@ -10,3 +10,40 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
+int	ft_atoi(const char *str)
+{
+	int	index;
+	int	negative;
+	int	number;
+
+	index = 0;
+	negative = 0;
+	number = 0;
+	while (str[index] == 32 || (str[index] >= 9 && str[index <= 13]))
+		index++;
+	if (str[index] == '-' || str[index] == '+')
+	{
+		if (str[index] == '-')
+			negative = 1;
+		index++;
+	}
+	while (str[index] >= '0' && str[index] <= '9')
+	{
+		number = number * 10 + (str[index] - '0');
+		index++;
+	}
+	if (negative)
+		number = -number;
+	return (number);
+}
+
+/*int main ()
+{
+	const char *str1 = "   -1234abc";
+
+	printf("Cadena: '%s', Resultado: %d\n", str1, ft_atoi(str1));
+
+	return (0);
+}*/
