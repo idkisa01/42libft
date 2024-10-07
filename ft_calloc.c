@@ -31,4 +31,5 @@ char *array;
 	array = (char*)ft_calloc(5, sizeof(char));
 	printf("ft_calloc %s \n",array);
 	free(array);
+	hola
 }*/
