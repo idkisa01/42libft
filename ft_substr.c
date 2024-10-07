@@ -1,34 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: isabegar <isabegar@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/21 18:38:15 by isabegar          #+#    #+#             */
-/*   Updated: 2024/10/05 20:33:21 by marvin           ###   ########.fr       */
+/*   Created: 2024-10-07 09:44:50 by isabegar          #+#    #+#             */
+/*   Updated: 2024-10-07 09:44:50 by isabegar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+char	*ft_substr(char const *s, unsigned int start,
+size_t len)
 {
-	unsigned char	*ptr;
+	// size_t = i;
+	// char *str;
 
-	ptr = (unsigned char *)s;
-	while (n > 0)
-	{
-		*ptr = 0;
-		ptr++;
-		n--;
-	}
-}
-
-/*int main(void)
-{
-	char buffer[11] = "Helloworld";
-	ft_bzero(buffer, 5);
-	printf("<%s>\n", buffer);
+	// if (!s)
+	// 	return(NULL);
+	// if (start > ft_strlen(s))
+	// 	return (ft_strdup(""));
 	return (0);
-}*/
+	
+
+}

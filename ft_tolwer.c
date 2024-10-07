@@ -10,9 +10,9 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include <stdio.h>
+#include "libft.h"
 
-int	ft_tolwer(char c)
+int	ft_tolwer(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		return (c + 32);
