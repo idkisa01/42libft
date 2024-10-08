@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 09:44:50 by isabegar          #+#    #+#             */
-/*   Updated: 2024/10/08 16:44:20 by marvin           ###   ########.fr       */
+/*   Updated: 2024/10/08 17:00:16 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,7 @@ size_t len)
 	char *s = "HelloWorld";
 	unsigned int	start = 5;
 	char			*newstr = ft_substr(s, start, 4);
-	printf("%s", newstr);
+	printf("%s\n", newstr);
+	free(newstr);
 	return(0);
 }*/
