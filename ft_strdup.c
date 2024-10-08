@@ -29,6 +29,7 @@ char	*ft_strdup(const char *s)
 {
     char *original = "Hello";
     char *duplicada = ft_strdup(original);
+	copia[0] = 'M';
 	printf("Cadena original: %s\n", original);
     printf("Cadena duplicada: %s\n", duplicada);
 
