@@ -16,11 +16,9 @@ char	*ft_strrchr(const char *s, int c)
 {
 	int	longer;
 
-	longer = 0;
-	while (s[longer] != '\0')
-		longer++;
-	if (c == '\0')
-		return ((char *)(s + longer));
+	longer = ft_strlen(s);
+	if ((char)c == '\0')
+		return ((char *)s + longer);
 	while (longer--)
 	{
 		if (s[longer] == (char)c)

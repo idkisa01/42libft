@@ -1,32 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_tolwer.c                                        :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isabegar <isabegar@student.42.fr>          +#+  +:+       +#+        */
+/*   By: isabegar <isabegar@student.42.fr>          #+#  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/19 14:20:39 by isabegar          #+#    #+#             */
-/*   Updated: 2024/09/19 14:25:34 by isabegar         ###   ########.fr       */
+/*   Created: 2024-10-11 13:54:24 by isabegar          #+#    #+#             */
+/*   Updated: 2024-10-11 13:54:24 by isabegar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 
-int	ft_tolwer(int c)
-{
-	if (c >= 'A' && c <= 'Z')
-		return (c + 32);
-	return (c);
-}
-
-/*int main (void)
-{
-	char c = 'H';
-	char result;
-	
-	result = ft_tolwer(c);
-	printf("%c\n", c);
-	printf("%c\n", result);
-	
-	return 0;
-}*/
+char	**ft_split(const char *s, char c)
