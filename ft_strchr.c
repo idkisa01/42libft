@@ -27,6 +27,9 @@ char	*ft_strchr(const char *s, int c)
 
 /*int main ()
 {
-	
-	printf("strchr %s \n",ft_strchr("hola paco como estas",'a'));
+	char	s[20] = "Hello world!";
+	int		c;
+
+	c = 'o';
+	printf("\tsrc: %s result: %s\n\n", s, ft_strchr(s, c));
 }*/

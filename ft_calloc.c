@@ -27,9 +27,8 @@ void	*ft_calloc(size_t count, size_t size)
 
 /*int main()
 {
-char *array;
-	array = (char*)ft_calloc(5, sizeof(char));
-	printf("ft_calloc %s \n",array);
+int *array;
+	array = (int*)ft_calloc(5, sizeof(int));
+	printf("ft_calloc: %s \n",array);
 	free(array);
-	hola
 }*/

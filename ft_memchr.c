@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 09:48:36 by isabegar          #+#    #+#             */
-/*   Updated: 2024/10/03 20:09:46 by marvin           ###   ########.fr       */
+/*   Updated: 2024/10/15 09:42:40 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +30,12 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-/*int main()
+/*int	main()
 {
-    unsigned char *result = memchr("Hola mundo", 'a', 10);
-    printf("%ld\n", result ? (result - (unsigned char *)"Hola mundo") : -1);
-    return 0;
+	char	s[20] = "Hello world!";
+	int		c;
+	char	*s2;
+	c = 'o';
+	s2 = ft_memchr(s, c, 8);
+	printf("\tresult: %s\n\n", s2);
 }*/

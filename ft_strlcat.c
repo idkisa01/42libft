@@ -3,31 +3,31 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isabegar <isabegar@student.42.fr>          #+#  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024-09-27 14:10:55 by isabegar          #+#    #+#             */
-/*   Updated: 2024-09-27 14:10:55 by isabegar         ###   ########.fr       */
+/*   Created: 2024/09/27 14:10:55 by isabegar          #+#    #+#             */
+/*   Updated: 2024/10/16 11:10:55 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	l_dst;
 	size_t	l_src;
 	size_t	i;
 
 	l_dst = 0;
-	while (dst[l_dst] != '\0' && l_dst < size)
+	while (dst[l_dst] != '\0' && l_dst < dstsize)
 		l_dst++;
 	l_src = 0;
 	while (src[l_src] != '\0')
 		l_src++;
-	if (size <= l_dst)
-		return (size + l_src);
+	if (dstsize <= l_dst)
+		return (dstsize + l_src);
 	i = 0;
-	while (src[i] != '\0' && (l_dst + i) < (size - 1))
+	while (src[i] != '\0' && (l_dst + i) < (dstsize - 1))
 	{
 		dst[l_dst + i] = src[i];
 		i++;
@@ -38,14 +38,10 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 /*int main()
 {
-    char dst[15] = "Hola ";
-    const char src[] = "Mundo";
-    size_t n = 10;
+	char	s[20] = "world!";
+	char	d[20] = "Hello ";
+	int		n;
 
-    size_t result = ft_strlcat(dst, src, n);
-
-    printf("Resultado de dst: '%s'\n", dst);  // Output: 'Hola Mun'
-    printf("Valor de retorno: %zu\n", result);  // Output: 10
-
-    return 0;
+	n = ft_strlcat(d, s, 12);
+	printf("\tdst: %s len: %d\n\n", d, n);
 }*/

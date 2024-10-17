@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isabegar <isabegar@student.42.fr>          #+#  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024-09-21 15:47:10 by isabegar          #+#    #+#             */
-/*   Updated: 2024-09-21 15:47:10 by isabegar         ###   ########.fr       */
+/*   Created: 2024/09/21 15:47:10 by isabegar          #+#    #+#             */
+/*   Updated: 2024/10/13 22:34:06 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,15 +26,14 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
+
 /*int main(void)
 {
-	char buffer[20] = "cocacola";
+	char s[] = "cocacola";
 
-	ft_memset(buffer, 'x',2);
+	ft_memset(s, 'a', 4);
 
-	buffer[10] = '\0';
-
-	printf("%s", buffer);
+	printf("%s\n", s);
 
 	return 0;
 }*/

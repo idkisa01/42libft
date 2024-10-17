@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 11:54:26 by isabegar          #+#    #+#             */
-/*   Updated: 2024/10/08 16:36:47 by marvin           ###   ########.fr       */
+/*   Updated: 2024/10/14 11:53:38 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 
 /*int main (void)
 {
-	char ptr_d[20];
-	char ptr_s[] = "holamundo";
-	size_t n = 3;
-	ft_memcpy(ptr_d, ptr_s, n);
-	ptr_d[n] = '\0';
-	printf("%s\n" , ptr_d);
+	char d[20];
+	char s[] = "holamundo";
+	ft_memcpy(d, s, 3);
+	printf("src: %s dst: %s\n\n", s, d);
 }*/

@@ -34,12 +34,11 @@ char	*ft_strnstr(const char *big,	const char *small, size_t size)
 	return (NULL);
 }
 
-/*int main() {
-    const char *big = "Hello, world!";
-    const char *small = "world";
-    char *result = ft_strnstr(big, small, 13);
+/*int main()
+{
+	char	s[20] = "Hello world!";
+	char	s2[20] = "llo";
 
-    printf("Result: '%s'\n", result);
 
-    return 0;
+	printf("\tsrc: %s search: %s result: %s\n\n", s, s2, ft_strnstr(s, s2, 12));
 }*/

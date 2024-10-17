@@ -47,3 +47,15 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	return (str);
 }
+
+/*int main ()
+{
+	char	*s;
+	char	*set;
+	char	*str;
+
+	s = "abcgatoabc";
+	set = "abc";
+	str = ft_strtrim(s, set);
+	printf("\tsrc: %s strtrim: %s\n\n", s, str);
+}*/

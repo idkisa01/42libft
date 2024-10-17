@@ -72,12 +72,11 @@ char	*ft_itoa(int n)
 	return (dest);
 }
 
-/*
-int	main(void)
+/*int	main(void)
 {
 	char	*str;
 
 	str = ft_itoa(-4568);
-	printf("%s\n", str);
-	return (0);
+	printf("\t %s\n\n", str);
+
 }*/

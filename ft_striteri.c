@@ -12,11 +12,11 @@
 
 #include "libft.h"
 
-/*void	suma(unsigned int i, char *c)
+/*void	to_upper(unsigned int i, char *c)
 {
 	(void)i;
 	if (*c >= 'a' && *c <= 'z')
-		*c -= ('a' - 'A');
+		*c -= 32;
 }*/
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
@@ -33,8 +33,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 
 /*int main()
 {
-	char str[] = "hola";
-	ft_striteri(str, suma);
+	char str[10] = "Hello";
+	ft_striteri(str, to_upper);
 	printf("%s\n",str);
-	return (0);
 }*/

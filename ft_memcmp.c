@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 11:53:34 by isabegar          #+#    #+#             */
-/*   Updated: 2024/10/03 20:10:14 by marvin           ###   ########.fr       */
+/*   Updated: 2024/10/15 01:44:53 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,11 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+/*int main(void)
+{
+	char	s[20] = "Hello world!";
+	char	s2[20] = "Hello world!";
+
+	printf("\ts1: %s s2: %s result: %d\n\n", s, s2, ft_memcmp(s, s2, 4));
+}*/

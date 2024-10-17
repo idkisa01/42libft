@@ -26,14 +26,13 @@ char	*ft_strdup(const char *s)
 	return (dest);
 }
 
-/*int main()
+/*int	main()
 {
-    char *original = "Hello";
-    char *duplicada = ft_strdup(original);
-	copia[0] = 'M';
-	printf("Cadena original: %s\n", original);
-    printf("Cadena duplicada: %s\n", duplicada);
+	char	*s;
+	char	*dup;
 
-	free(duplicada);
-	return (0);
+	s = "Hello World!";
+	dup = ft_strdup(s);
+	printf("\tduplicate: %s\n", dup);
+	printf("\tPointer s: %p, Pointer dup: %p\n\n", s, dup);
 }*/

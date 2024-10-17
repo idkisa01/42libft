@@ -29,5 +29,5 @@ char	*ft_strrchr(const char *s, int c)
 
 /*int main()
 {
-	printf("strrchr %s \n", ft_strrchr("Hola, mundo!", 'm'));
+	printf("strrchr %s \n", ft_strrchr("Hola, mundo!", 'o'));
 }*/

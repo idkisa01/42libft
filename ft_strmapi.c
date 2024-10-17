@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-/*char	suma(unsigned int i,  char c)
+/*char	to_upper(unsigned int i,  char c)
 {
 	(void) i;
 	if (c >= 'a' && c <= 'z')
@@ -43,8 +43,8 @@ int, char))
 
 /*int	main(void)
 {
-	char	*dest = "hola";
-	printf("%s",ft_strmapi(dest,suma));
-	printf("\n%s",dest);
-	return (0);
+	char	*s;
+	s= "hola";
+	printf("%s",ft_strmapi(s,to_upper));
+	printf("\n%s", s);
 }*/

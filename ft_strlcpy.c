@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isabegar <isabegar@student.42.fr>          #+#  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024-09-27 14:02:00 by isabegar          #+#    #+#             */
-/*   Updated: 2024-09-27 14:02:00 by isabegar         ###   ########.fr       */
+/*   Created: 2024/09/27 14:02:00 by isabegar          #+#    #+#             */
+/*   Updated: 2024/10/14 17:36:11 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 	size_t	i_src;
@@ -22,10 +22,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	{
 		i_src++;
 	}
-	if (size > 0)
+	if (dstsize > 0)
 	{
 		i = 0;
-		while (src[i] != '\0' && i < (size - 1))
+		while (src[i] != '\0' && i < (dstsize - 1))
 		{
 			dst[i] = src[i];
 			i++;
@@ -37,10 +37,10 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 
 /*int	main()
 {
-	char dst[] = "mundo";
-	char src[10] = "hola";
-	size_t n = 5;
-	printf("%d \n",(int)ft_strlcpy(dst,src, n));
-	printf("'%s' \n",dst); //esto falla
-	return (0);
+	char	s[] = "gatinha";
+	char	d[20];
+	int		n;
+
+	n = ft_strlcpy(d, s, 2);
+	printf("\tsrc: %s dst: %s len: %d\n\n", s, d, n);
 }*/

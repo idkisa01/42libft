@@ -41,9 +41,7 @@ int	ft_atoi(const char *str)
 
 /*int main ()
 {
-	const char *str1 = "   -1234abc";
+	const char *s = "   -1234abc";
 
-	printf("Cadena: '%s', Resultado: %d\n", str1, ft_atoi(str1));
-
-	return (0);
+	printf("Cadena: '%s', Resultado: %d\n", str1, ft_atoi(s));
 }*/

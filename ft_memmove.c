@@ -41,13 +41,9 @@ void	*ft_memmove(void *dest, const void *src, size_t len)
 
 /*int main(void)
 {
-    char src[] = "Hola Mundo";    // Cadena origen
-    char dest[20];                // Cadena destino (vacía por ahora)
+	char	s[] = "GATA";
 
-    // Llamamos a ft_memmove para copiar "Hola Mundo" a dest
-    ft_memmove(dest, src, strlen(src) + 1);
-    // Mostramos el resultado
-    printf("Cadena copiada: %s\n", dest);
-
-    return 0;
+	ft_memmove(s + 1, s, 3);
+	
+	printf("%s\n\n", s);
 }*/

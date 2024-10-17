@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: isabegar <isabegar@student.42.fr>          #+#  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024-10-11 13:54:24 by isabegar          #+#    #+#             */
-/*   Updated: 2024-10-11 13:54:24 by isabegar         ###   ########.fr       */
+/*   Created: 2024/10/11 13:54:24 by isabegar          #+#    #+#             */
+/*   Updated: 2024/10/16 20:26:37 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static	size_t	lenght_word(char const *s, char c)
+static	size_t	length_word(char const *s, char c)
 {
 	size_t	size;
 
@@ -32,7 +32,7 @@ static	size_t	count_words(char const *s, char c)
 		if (*s != c)
 		{
 			count++;
-			s += lenght_word(s, c);
+			s += length_word(s, c);
 		}
 		else
 			s++;
@@ -67,10 +67,10 @@ char	**ft_split(char const *s, char c)
 	{
 		if (*s != c)
 		{
-			words[i] = ft_substr(s, 0, lenght_word(s, c));
+			words[i] = ft_substr(s, 0, length_word(s, c));
 			if (!words[i++])
 				return (free_mem(words), NULL);
-			s += lenght_word(s, c);
+			s += length_word(s, c);
 		}
 		else
 			s++;
@@ -78,3 +78,23 @@ char	**ft_split(char const *s, char c)
 	words[i] = NULL;
 	return (words);
 }
+
+/*int main ()
+	{
+		char	*s;
+		char	**words;
+		char	d;
+		int	i;
+
+		s = "Hello World!";
+		d = ' ';
+		words = ft_split(s, d);
+		i = 0;
+
+		printf("\tsrc: %s delimiter: <%c>\n", s, d);
+		while (words[i])
+		{
+			printf("\tsrc %d: %s pointer: %p\n", i, words[i], words[i]);
+			i++;
+		}
+	}*/

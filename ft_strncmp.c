@@ -30,12 +30,8 @@ int	ft_strncmp(const char	*s1, const char *s2, size_t n)
 
 /*int main()
 {
-	const char s1[] = "Hola amigos";
-    const char s2[] = "Hola mundo"; 
-    // Llamada a tu función ft_strncmp
-    int result = ft_strncmp(s1, s2, 20);
+	char	s[20] = "Hello world!";
+	char	s2[20] = "Hello world!";
 
-    printf("Diferencia en ASCII: %d\n", result);
-
-    return 0;
+	printf("\ts1: %s s2: %s result: %d\n\n", s, s2, ft_strncmp(s, s2, 4));
 }*/

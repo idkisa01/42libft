@@ -32,10 +32,9 @@ char	*ft_strjoin(char const *s1, char const *s2)
 /*int main() {
 char *s1 = "Hello, ";
 char *s2 = "world!";
-char *result = ft_strjoin(s1, s2);
+char *str = ft_strjoin(s1, s2);
 
-printf("%s\n", result);
+printf("%s\n", str);
 
-free(result); 
-return 0;
+free(str); 
 }*/
